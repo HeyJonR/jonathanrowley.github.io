@@ -56,7 +56,13 @@
             }
 
             .site-nav {
-                -webkit-position: sticky;
+                height: 100%;
+                display: inline-block;
+                pointer-events: none;
+            }
+
+            .site-nav__container {
+                position: -webkit-sticky;
                 position: sticky;
                 top: 0;
                 overflow: auto;
@@ -65,6 +71,7 @@
             .site-nav__list {
                 list-style: none;
                 padding: 0;
+                
             }
 
             .contact-methods__list {
@@ -83,17 +90,19 @@
             <div class="grid__row">
                 <div class="grid__cell">
                     <nav class="site-nav">
-                        <ul class="site-nav__list">
-                            <li class="site-nav__item">
-                                <a href="#home" class="site-nav__link">Home</a>
-                            </li>
-                            <!--<li class="site-nav__item">
-                                <a href="/notes/" class="site-nav__link">Notes</a>
-                            </li>-->
-                            <li class="site-nav__item">
-                                <a href="#contact" class="site-nav__link">Contact</a>
-                            </li>
-                        </ul>
+                        <div class="site-nav__container">
+                            <ul class="site-nav__list">
+                                <li class="site-nav__item">
+                                    <a href="#home" class="site-nav__link">Home</a>
+                                </li>
+                                <!--<li class="site-nav__item">
+                                    <a href="/notes/" class="site-nav__link">Notes</a>
+                                </li>-->
+                                <li class="site-nav__item">
+                                    <a href="#contact" class="site-nav__link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
                 <div class="grid__cell">
