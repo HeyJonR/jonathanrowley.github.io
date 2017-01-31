@@ -16,9 +16,12 @@
                 display: table;
             }
 
-            .grid--stretch {
+            .grid--stretch-x {
                 width: 100%;
-                height: 100%;
+            }
+
+            .grid--min-y {
+                min-height: 100%;
             }
 
             .grid__row {
@@ -28,6 +31,7 @@
             .grid__cell {
                 display: table-cell;
                 padding-left: 8px;
+                vertical-align: top;
             }
         </style>
         <style>
@@ -35,7 +39,6 @@
                 width: 100%;
                 height: 100%;
                 margin: 0;
-                overflow: hidden;
             }
 
             body {
@@ -52,6 +55,13 @@
                             sans-serif;
             }
 
+            .site-nav {
+                -webkit-position: sticky;
+                position: sticky;
+                top: 0;
+                overflow: auto;
+            }
+
             .site-nav__list {
                 list-style: none;
                 padding: 0;
@@ -62,21 +72,14 @@
                 padding: 0;
             }
 
-            .page-container {
-                width: 100%;
-                height: 100%;
-                overflow: auto;
-            }
-
             .page-container__page {
-                min-width: 100%;
-                min-height: 100%;
+                min-height: 100vh;
                 overflow: auto; /* required for collapsing margins */
             }
         </style>
     </head>
     <body>
-        <div class="grid grid--stretch">
+        <div class="grid grid--stretch-x grid--min-y">
             <div class="grid__row">
                 <div class="grid__cell">
                     <nav class="site-nav">
