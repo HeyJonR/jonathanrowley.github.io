@@ -11,7 +11,7 @@
         <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
         <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
         <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">-->
-        <style>
+        <!--<style>
             .grid {
                 display: table;
             }
@@ -33,12 +33,11 @@
                 padding-left: 8px;
                 vertical-align: top;
             }
-        </style>
+        </style>-->
         <style>
             html, body {
                 width: 100%;
                 height: 100%;
-                margin: 0;
             }
 
             body {
@@ -53,26 +52,26 @@
                             "Droid Sans",
                             "Helvetica Neue",
                             sans-serif;
+                margin: 0;
+                padding: 10px;
+                box-sizing: border-box;
             }
 
             .site-nav {
-                height: 100%;
-                display: inline-block;
-                pointer-events: none;
-            }
-
-            .site-nav__container {
-                position: -webkit-sticky;
-                position: sticky;
-                top: 0;
                 overflow: auto;
-                pointer-events: all;
+                text-align: right;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;
+                z-index: 10;
+                box-sizing: border-box;
+                padding: inherit;
             }
 
-            .site-nav__list {
+             .site-nav__list {
                 list-style: none;
                 padding: 0;
-                
             }
 
             .contact-methods__list {
@@ -80,59 +79,62 @@
                 padding: 0;
             }
 
+            .page-container {
+                height: 100%;
+            }
+
             .page-container__page {
-                min-height: 100vh;
+                min-height: 100%;
                 overflow: auto; /* required for collapsing margins */
+                position: relative;
+            }
+
+            .page-footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
             }
         </style>
     </head>
     <body>
-        <div class="grid grid--stretch-x grid--min-y">
-            <div class="grid__row">
-                <div class="grid__cell">
-                    <nav class="site-nav">
-                        <div class="site-nav__container">
-                            <ul class="site-nav__list">
-                                <li class="site-nav__item">
-                                    <a href="#home" class="site-nav__link">Home</a>
-                                </li>
-                                <!--<li class="site-nav__item">
-                                    <a href="/notes/" class="site-nav__link">Notes</a>
-                                </li>-->
-                                <li class="site-nav__item">
-                                    <a href="#contact" class="site-nav__link">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+        <nav class="site-nav" id="menu">
+            <a href="#menu">Menu</a>
+            <ul class="site-nav__list">
+                <li class="site-nav__item">
+                    <a href="#home" class="site-nav__link">Home</a>
+                </li>
+                <!--<li class="site-nav__item">
+                    <a href="/notes/" class="site-nav__link">Notes</a>
+                </li>-->
+                <li class="site-nav__item">
+                    <a href="#contact" class="site-nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="page-container">
+            <section id="home" class="page-container__page">
+                <header>
+                    <h1>Jonathan Rowley <span>Web Developer in North Yorkshire</span></h1>
+                </header>
+                <p>Performance optimisation, progressive web apps, HTML5, CSS3, JavaScript.</p>
+                <footer class="page-footer">
+                    Building web apps with <span>love</span> on the open web.
+                </footer>
+            </section>
+            <!--<section id="notes">
+            </section>-->
+            <section id="contact" class="page-container__page">
+                <header>
+                    <h1>Get in touch</h1>
+                </header>
+                <div class="contact-methods">
+                    <ul class="contact-methods__list">
+                        <li class="contact-methods__item">LinkedIn: <a href="https://www.linkedin.com/in/jonathan-rowley-16246535" class="contact-methods__link">Jonathan Rowley</a></li>
+                        <li class="contact-methods__item">Twitter: <a href="https://twitter.com/@_JonathanRowley" class="contact-methods__link">@_JonathanRowley</a></li>
+                    </ul>
                 </div>
-                <div class="grid__cell">
-                    <main class="page-container">
-                        <section id="home" class="page-container__page">
-                            <header>
-                                <h1>Jonathan Rowley <span>Web Developer in North Yorkshire</span></h1>
-                            </header>
-                            <p>Performance optimisation, progressive web apps, HTML5, CSS3, JavaScript.</p>
-                            <footer>
-                                Building web apps with <span>love</span> on the open web.
-                            </footer>
-                        </section>
-                        <!--<section id="notes">
-                        </section>-->
-                        <section id="contact" class="page-container__page">
-                            <header>
-                                <h1>Get in touch</h1>
-                            </header>
-                            <div class="contact-methods">
-                                <ul class="contact-methods__list">
-                                    <li class="contact-methods__item">LinkedIn: <a href="https://www.linkedin.com/in/jonathan-rowley-16246535" class="contact-methods__link">Jonathan Rowley</a></li>
-                                    <li class="contact-methods__item">Twitter: <a href="https://twitter.com/@_JonathanRowley" class="contact-methods__link">@_JonathanRowley</a></li>
-                                </ul>
-                            </div>
-                        </section>
-                    </main>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </body>
 </html>
