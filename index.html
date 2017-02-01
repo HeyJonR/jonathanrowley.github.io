@@ -95,12 +95,23 @@
                 padding: 10px;
             }
 
+            .page-container__page--hero {
+                text-align: center;
+            }
+
+            .button {
+                background-color: #2196f3;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
             .hero-footer {
                 position: absolute;
                 bottom: 10px;
                 right: 0;
                 left: 0;
-                text-align: center;
             }
         </style>
     </head>
@@ -120,11 +131,12 @@
             </ul>
         </nav>
         <main class="page-container">
-            <section id="home" class="page-container__page">
+            <section id="home" class="page-container__page page-container__page--hero">
                 <header>
                     <h1>Jonathan Rowley <span>Web Developer in North Yorkshire</span></h1>
                 </header>
                 <p>Performance optimisation, progressive web apps, HTML5, CSS3, JavaScript.</p>
+                <!--<a href="/" class="button">button</a>-->
                 <footer class="hero-footer">
                     Building web apps with <span>love</span> on the open web.
                 </footer>
