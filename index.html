@@ -35,6 +35,10 @@
             }
         </style>-->
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
             html, body {
                 width: 100%;
                 height: 100%;
@@ -53,8 +57,6 @@
                             "Helvetica Neue",
                             sans-serif;
                 margin: 0;
-                padding: 10px;
-                box-sizing: border-box;
             }
 
             .site-nav {
@@ -65,8 +67,7 @@
                 right: 0;
                 width: 100%;
                 z-index: 10;
-                box-sizing: border-box;
-                padding: inherit;
+                padding: 10px;
             }
 
              .site-nav__list {
@@ -87,12 +88,14 @@
                 min-height: 100%;
                 overflow: auto; /* required for collapsing margins */
                 position: relative;
+                padding: 10px;
             }
 
-            .page-footer {
+            .hero-footer {
                 position: absolute;
-                bottom: 0;
-                width: 100%;
+                bottom: 10px;
+                right: 0;
+                left: 0;
                 text-align: center;
             }
         </style>
@@ -118,7 +121,7 @@
                     <h1>Jonathan Rowley <span>Web Developer in North Yorkshire</span></h1>
                 </header>
                 <p>Performance optimisation, progressive web apps, HTML5, CSS3, JavaScript.</p>
-                <footer class="page-footer">
+                <footer class="hero-footer">
                     Building web apps with <span>love</span> on the open web.
                 </footer>
             </section>
