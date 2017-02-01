@@ -75,6 +75,10 @@
                 padding: 0;
             }
 
+            .site-nav__menu {                
+                
+            }
+
             .contact-methods__list {
                 list-style: none;
                 padding: 0;
@@ -102,16 +106,16 @@
     </head>
     <body>
         <nav class="site-nav" id="menu">
-            <a href="#menu">Menu</a>
+            <a href="#menu" class="site-nav__menu">Menu</a>
             <ul class="site-nav__list">
                 <li class="site-nav__item">
-                    <a href="#home" class="site-nav__link">Home</a>
+                    <a href="#home" class="site-nav__link site-nav__link--home">Home</a>
                 </li>
                 <!--<li class="site-nav__item">
                     <a href="/notes/" class="site-nav__link">Notes</a>
                 </li>-->
                 <li class="site-nav__item">
-                    <a href="#contact" class="site-nav__link">Contact</a>
+                    <a href="#contact" class="site-nav__link site-nav__link--contact">Contact</a>
                 </li>
             </ul>
         </nav>
