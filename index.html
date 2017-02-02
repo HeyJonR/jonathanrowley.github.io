@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="apple-mobile-web-app-title" content="Jonathan R.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jonathan Rowley - Web Developer</title>
@@ -56,26 +56,32 @@
                             "Droid Sans",
                             "Helvetica Neue",
                             sans-serif;
+                font-weight: 100;
                 margin: 0;
             }
 
             .site-nav {
                 overflow: auto;
-                text-align: right;
                 position: fixed;
                 top: 0;
-                right: 0;
+                left: 0;
+                width: 100%;
                 z-index: 10;
                 padding: 10px;
             }
 
-             .site-nav__list {
+            .site-nav__menu-toggle {
+                /*background-color: #1d87e4;
+                padding: 10px;
+                border-radius: 10px;*/
+            }
+
+            .site-nav__list {
                 list-style: none;
                 padding: 0;
             }
 
-            .site-nav__menu {                
-                
+            .site-nav__link {
             }
 
             .contact-methods__list {
@@ -92,23 +98,50 @@
                 overflow: auto; /* required for collapsing margins */
                 position: relative;
                 padding: 10px;
+                width: 100%;
             }
 
             .page-container__page--hero {
                 text-align: center;
+                background-color: #03a9f4;
+                background-color: #222;
+                color: #fff;
+                box-shadow: 0 0 10px 1px #000;
+                display: table;
             }
 
             .button {
-                background-color: #2196f3;
+                background-color: #03a9f4;
                 color: #fff;
                 text-decoration: none;
                 padding: 10px;
                 border-radius: 10px;
             }
 
+            .hero-header {
+                overflow: auto;
+                vertical-align: middle;
+                display: table-cell;
+            }
+
+            .hero-title {
+                /*position: relative;
+                top: -1em;*/
+                font-size: 2em;
+                font-weight: 200;
+            }
+
+            .hero-subtitle {
+                font-size: 0.5em;
+                display: block;
+                /*text-transform: uppercase;*/
+                font-weight: 400;
+                
+            }
+
             .hero-footer {
                 position: absolute;
-                bottom: 10px;
+                bottom: 30px;
                 right: 0;
                 left: 0;
             }
@@ -116,7 +149,7 @@
     </head>
     <body>
         <nav class="site-nav" id="menu">
-            <a href="#menu" class="site-nav__menu">Menu</a>
+            <a href="#menu" class="site-nav__menu-toggle">Menu</a>
             <ul class="site-nav__list">
                 <li class="site-nav__item">
                     <a href="#home" class="site-nav__link site-nav__link--home">Home</a>
@@ -131,10 +164,10 @@
         </nav>
         <main class="page-container">
             <section id="home" class="page-container__page page-container__page--hero">
-                <header>
-                    <h1>Jonathan Rowley <span>Web Developer in North Yorkshire</span></h1>
+                <header class="hero-header">
+                    <h1 class="hero-title">Jonathan Rowley <span class="hero-subtitle">Web Developer</span></h1>
                 </header>
-                <p>Performance optimisation, progressive web apps, HTML5, CSS3, JavaScript.</p>
+                <!--<p>Performance optimisation, progressive web apps, HTML5, CSS3, JavaScript.</p>-->
                 <!--<a href="/" class="button">button</a>-->
                 <footer class="hero-footer">
                     Building web apps with <span>love</span> on the open web.
