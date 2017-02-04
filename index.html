@@ -58,6 +58,9 @@
                             sans-serif;
                 font-weight: 100;
                 margin: 0;
+                -moz-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
             }
 
             .site-nav {
@@ -103,12 +106,17 @@
                 width: 100%;
             }
 
+            .page-container__footer {
+                padding: 10px;
+                text-align: center;
+            }
+
             .page-container__page--hero {
                 text-align: center;
                 background-color: #03a9f4;
                 background-color: #000;
                 color: #fff;
-                box-shadow: 0 0 10px 1px #000;
+                /*box-shadow: 0 0 10px 1px #000;*/
                 display: table;
             }
 
@@ -120,6 +128,12 @@
                 border-radius: 10px;
             }
 
+            .link {
+                color: #e62690;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
             .hero-header {
                 overflow: auto;
                 vertical-align: middle;
@@ -127,17 +141,14 @@
             }
 
             .hero-title {
-                /*position: relative;
-                top: -1em;*/
                 font-size: 2em;
                 font-weight: 200;
             }
 
             .hero-subtitle {
-                font-size: 0.5em;
+                font-size: 0.75em;
                 display: block;
-                /*text-transform: uppercase;*/
-                font-weight: 400;
+                font-weight: bold;
                 
             }
 
@@ -156,9 +167,9 @@
                 <li class="site-nav__item">
                     <a href="#home" class="site-nav__link site-nav__link--home">Home</a>
                 </li>
-                <!--<li class="site-nav__item">
-                    <a href="/notes/" class="site-nav__link">Notes</a>
-                </li>-->
+                <li class="site-nav__item">
+                    <a href="#about" class="site-nav__link">About</a>
+                </li>
                 <li class="site-nav__item">
                     <a href="#contact" class="site-nav__link site-nav__link--contact">Contact</a>
                 </li>
@@ -169,25 +180,38 @@
                 <header class="hero-header">
                     <h1 class="hero-title">Jonathan Rowley <span class="hero-subtitle">Web Developer</span></h1>
                 </header>
-                <!--<p>Performance optimisation, progressive web apps, HTML5, CSS3, JavaScript.</p>-->
-                <!--<a href="/" class="button">button</a>-->
-                <footer class="hero-footer">
-                    Building web apps with <span>love</span> on the open web.
-                </footer>
             </section>
-            <!--<section id="notes">
-            </section>-->
+            <section id="about" class="page-container__page">
+                <header>
+                    <h1>About</h1>
+                </header>
+                <img src="/images/me.jpg" />
+                <p>Currently buiding web apps for <a href="https://replgroup.com" class="link">REPL group</a></p>
+            </section>
+            <section id="notes" class="page-container__page">
+                <header>
+                    <h1>Notes</h1>
+                </header>
+                <article>
+                    <p></p>
+                    <a href="notes/" class="link">Read more</a>
+                </article>
+            </section>
             <section id="contact" class="page-container__page">
                 <header>
                     <h1>Get in touch</h1>
                 </header>
                 <div class="contact-methods">
                     <ul class="contact-methods__list">
-                        <li class="contact-methods__item">LinkedIn: <a href="https://www.linkedin.com/in/jonathan-rowley-16246535" class="contact-methods__link">Jonathan Rowley</a></li>
-                        <li class="contact-methods__item">Twitter: <a href="https://twitter.com/@_JonathanRowley" class="contact-methods__link">@_JonathanRowley</a></li>
+                        <li class="contact-methods__item">LinkedIn: <a href="https://www.linkedin.com/in/jonathan-rowley-16246535" class="link contact-methods__link">Jonathan Rowley</a></li>
+                        <li class="contact-methods__item">Twitter: <a href="https://twitter.com/@_JonathanRowley" class="link contact-methods__link">@_JonathanRowley</a></li>
                     </ul>
                 </div>
             </section>
+            <footer class="page-container__footer">
+                Building web apps with love on the open web.
+            </footer>
         </main>
+        
     </body>
 </html>
