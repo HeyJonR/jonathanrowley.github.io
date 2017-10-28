@@ -11,29 +11,6 @@
         <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
         <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
         <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">-->
-        <!--<style>
-            .grid {
-                display: table;
-            }
-
-            .grid--stretch-x {
-                width: 100%;
-            }
-
-            .grid--min-y {
-                min-height: 100%;
-            }
-
-            .grid__row {
-                display: table-row;
-            }
-
-            .grid__cell {
-                display: table-cell;
-                padding-left: 8px;
-                vertical-align: top;
-            }
-        </style>-->
         <style>
             * {
                 box-sizing: border-box;
@@ -61,152 +38,93 @@
                 -moz-text-size-adjust: 100%;
                 -webkit-text-size-adjust: 100%;
                 -ms-text-size-adjust: 100%;
+                font-size: 1.2em;
+                line-height: 1.8;
             }
 
-            .site-nav {
-                overflow: auto;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 10;
-                padding: 10px;
-                /*background-color: #000;*/
-                display: none; /* hidden for now */
-            }
-
-            .site-nav__menu-toggle {
-                /*background-color: #1d87e4;
-                padding: 10px;
-                border-radius: 10px;*/
-            }
-
-            .site-nav__list {
-                list-style: none;
-                padding: 0;
-            }
-
-            .site-nav__link {
-            }
-
-            .page-container {
-                height: 100%;
-            }
-
-            .page-container__page {
-                min-height: 100%;
-                overflow: auto; /* required for collapsing margins */
-                position: relative;
-                padding: 10px;
-                width: 100%;
-            }
-
-            .page-container__page--hero {
+            .hero {
+                padding: 30px;
+                height: 75%;
+                background: grey;
+                background: linear-gradient(to right, #9600EE, #EB2996);
                 text-align: center;
-                background-color: #03a9f4;
-                background-color: #000;
-                color: #fff;
-                /*box-shadow: 0 0 10px 1px #000;*/
-                display: table;
-                -webkit-touch-callout: none; /* iOS Safari */
-                -webkit-user-select: none; /* Safari */
-                -khtml-user-select: none; /* Konqueror HTML */
-                -moz-user-select: none; /* Firefox */
-                -ms-user-select: none; /* Internet Explorer/Edge */
-                user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
-                cursor: default;
             }
 
-            .hero-header {
+            .hero__text {
+                position: relative; 
+                top: 25%;
                 overflow: auto;
-                vertical-align: middle;
-                display: table-cell;
             }
 
-            .hero-title {
-                font-size: 2em;
-                font-weight: 200;
+            .hero__link {
+                border: none;
+                background: white;
+                border-radius: 30px;
+                padding: 10px 30px;
+                display: inline-block;
+                text-decoration: none;
+                color: #EB2996;
             }
 
-            .hero-subtitle {
-                font-size: 0.75em;
-                display: block;
-                font-weight: bold;
-                
+            .hero__title {
+                color: white;
+                margin-bottom: 1em;
+            }
+
+            .hero__sub-text {
+                color: white;
+            }
+
+            .section {
+                padding: 30px;
+                max-width: 640px;
+                margin: 0 auto;
             }
         </style>
     </head>
     <body>
-        <nav class="site-nav" id="menu">
-            <a href="#menu" class="site-nav__menu-toggle">Menu</a>
-            <ul class="site-nav__list">
-                <li class="site-nav__item">
-                    <a href="#!home" class="site-nav__link site-nav__link--home">Home</a>
-                </li>
-                <li class="site-nav__item">
-                    <a href="#!about" class="site-nav__link">About</a>
-                </li>
-                <li class="site-nav__item">
-                    <a href="#!contact" class="site-nav__link site-nav__link--contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <main class="page-container">
-            <section id="home" class="page-container__page page-container__page--hero">
-                <header class="hero-header">
-                    <h1 class="hero-title">Jonathan Rowley <span class="hero-subtitle">Web Developer</span></h1>
+        <header class="hero">
+            <div class="hero__text">
+                <h1 class="hero__title">
+                    <span class="hero__title-text">Hello,</span> <span class="hero__title-text">I'm Jonathan,</span> a Web Application Designer &amp; Developer.
+                </h1>
+                <a href="#contact" class="hero__link">Get in Touch</a>
+                <p>
+                    <small class="hero__sub-text">York, United Kingdom</small>
+                </p>
+            </div>
+        </header>
+        <main>
+            <section class="section" id="about">
+                <header>
+                    <h1>Modern Development</h1>
                 </header>
+                <main>
+                    <p>Based near York, in the United Kingdom, I'm employed by <a href="https://www.replgroup.com">REPL Group</a> where I work with some of the the worlds largest organisations, building modern enterprise web applications across platforms.</p>
+                    <p>I'm passionate about User Interface (UI), User Experience (UX) design and building scalable web applications using modern technologies to provide accessible elegant solutions.</p>
+                    <p>To me the web isn't just a software runtime, it's constantly evolving, providing new functionality and feature sets, offering a unique universal platform agnostically designed for any network or connected device.</p>
+                </main>
             </section>
-            <section id="!about" class="page-container__page">
-                <div class="page-container__page-wrapper">
-                    <header>
-                        <img src="images/me.jpg" class="profile-image" />
-                        <h1>About Me</h1>
-                    </header>
-                    <p>I'm a Senior Web Developer at <a href="https://www.replgroup.com/" class="link">REPL Group</a> building performance optimised applications with modern web technologies. I've built and deployed applications for the worlds largest retailers, healthcare organisations, governments and councils.</p>
-                    <p>Having deployed projects into the NHS, local government, council offices and various global IT administered corporate networks, I have experience planning, building and deploying applications into the enterprise across numerous platforms, devices and networks. I'm passionate about using modern integration and delivery strategies whilst also providing secure backward compatibility implementations for legacy line of business apps.</p>
-                    <p>I'd love to hear from you, so feel free to <a href="#!contact" class="link">get in touch</a>.</p>
-                    <h2>Location</h2>
-                    <p>North Yorkshire, UK</p>
-                    <h2>Specialisms</h2>
-                    <ul>
-                        <li>
-                            Enterprise application integration &amp; delivery for Microsoft Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Citrix, iOS, Android and macOS (OS X) using web technologies
-                        </li>
-                        <li>
-                            Progressive Enhancement and Progressive Web Apps
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section id="!notes" class="page-container__page">
-                <div class="page-container__page-wrapper">
-                    <header>
-                        <h1>Recent Posts</h1>
-                    </header>
+            <section class="section" id="posts">
+                <header>
+                    <h1>Recent Posts</h1>
+                </header>
+                <main>
                     <ul>
                         <li>
                             <a href="https://www.linkedin.com/pulse/what-microsoft-showing-us-enterprise-app-delivery-new-jonathan-rowley" class="link">What Microsoft is showing us about enterprise app delivery with the new Surface laptop and Windows 10 S announcement</a>
                         </li>
                     </ul>
-                </div>
+                </main>
             </section>
-            <section id="!contact" class="page-container__page">
-                <div class="page-container__page-wrapper">
-                    <header>
-                        <h1>Get in touch</h1>
-                    </header>
-                    <div class="contact-methods">
-                        <ul class="contact-methods__list">
-                            <li class="contact-methods__item">LinkedIn: <a href="https://www.linkedin.com/in/jonathan-rowley-16246535" class="link contact-methods__link">Jonathan Rowley</a></li>
-                            <li class="contact-methods__item">Twitter: <a href="https://twitter.com/@_JonathanRowley" class="link contact-methods__link">@_JonathanRowley</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <section class="section" id="contact">
+                <header>
+                    <h1>Get in Touch</h1>
+                </header>
+                <main>
+                    If you have a question, please <a href="mailto:jonathans.email@icloud.com">email me</a> I'd love to hear from you. :)
+                </main>
             </section>
-            <footer class="page-container__footer">
-                Building web apps with love on the open web.
-            </footer>
         </main>
         <link rel="stylesheet" type="text/css" href="styles/main.css" async />
         <script>
