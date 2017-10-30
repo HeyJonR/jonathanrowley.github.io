@@ -43,12 +43,12 @@
             }
 
             .hero {
-                padding: 10% 30px;
                 min-height: 75%;
                 text-align: center;
                 background: #EB2996;
                 background: linear-gradient(to right, #9600EE, #EB2996);
-                position: relative;
+                display: table;
+                width: 100%;
             }
 
             .button {
@@ -64,6 +64,12 @@
             .button--hero {
                 background: white;
                 color: #EB2996;
+            }
+
+            .hero__banner {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 30px;
             }
 
             .hero__title {
@@ -88,22 +94,24 @@
     </head>
     <body>
         <header class="hero">
-            <h1 class="hero__title">
-                Web Application Design &amp; Development.
-            </h1>
-            <a href="#contact" class="button button--hero">Get in Touch</a>
-            <p>
-                <small class="hero__sub-text">York, United Kingdom</small>
-            </p>
+            <div class="hero__banner">
+                <h1 class="hero__title">
+                    Web Application Design &amp; Development
+                </h1>
+                <a href="#contact" class="button button--hero">Get in Touch</a>
+                <p>
+                    <small class="hero__sub-text">York, United Kingdom</small>
+                </p>
+            </div>
         </header>
         <main>
             <section class="section" id="about">
                 <header>
-                    <h1>Modern Development</h1>
+                    <h1>Hello</h1>
                 </header>
                 <main>
-                    <p>Based near York, United Kingdom, I'm employed by <a href="https://www.replgroup.com">REPL Group</a> where I work with some of the the worlds largest organisations, building modern enterprise web applications.</p>
-                    <p>I'm passionate about User Interface (UI) and User Experience (UX) design and building enterprise web applications using modern technologies.</p>
+                    <p>Based near York, United Kingdom, I'm employed by <a href="https://www.replgroup.com">REPL Group</a> where I work with some of the worlds largest organisations, building modern enterprise web applications.</p>
+                    <p>I'm passionate about User Interface (UI) and User Experience (UX) design, building modern web applications and supporting legacy browsers.</p>
                 </main>
             </section>
             <section class="section" id="posts">
