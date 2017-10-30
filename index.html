@@ -145,5 +145,13 @@
         ga('create', 'UA-91443602-1', 'auto');
         ga('send', 'pageview');
         </script>
+        <!--[if lte IE 8]>
+            <script>
+                var html5Elements = ["main", "section", "header", "footer", "article"];
+                for(var i = 0; i < html5Elements.length; i++) {
+                    document.createElement(html5Elements[i]);
+                }
+            </script>
+        <![endif]-->
     </body>
 </html>
