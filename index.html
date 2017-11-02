@@ -163,7 +163,7 @@
         <footer class="footer">
             <hr class="footer__rule" />
             <small>
-                <a href="/cv/index.html" title="Curriculum Vitae" target="_blank" onclick="window.open('/cv/index.html', '_blank', 'menubar=no, titlebar=no, toolbar=no, status=no, location=no, width=800, height=600')">CV</a>
+                <a href="/cv/index.html" title="Curriculum Vitae" target="_blank" onclick="openWindow('cv/index.html', event);">CV</a>
             </small>
         </footer>
         <!-- <link rel="stylesheet" type="text/css" href="styles/main.css" async /> -->
@@ -175,6 +175,12 @@
 
         ga('create', 'UA-91443602-1', 'auto');
         ga('send', 'pageview');
+        </script>
+        <script>
+            function openWindow(webAddress, event) {
+                window.open(webAddress, '_blank', 'menubar=no, titlebar=no, toolbar=no, status=no, location=no, width=800, height=600');
+                event.preventDefault();
+            }
         </script>
     </body>
 </html>
