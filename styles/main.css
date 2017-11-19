@@ -1,0 +1,16 @@
+.footer {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.footer__rule {
+    display: block;
+    height: 0;
+    border: 0;
+    border-top: 2px solid #ddd;
+}
+
+.footer__copyright {
+    color: #ddd;
+}
