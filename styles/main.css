@@ -8,9 +8,9 @@
     display: block;
     height: 0;
     border: 0;
-    border-top: 2px solid #ddd;
+    border-top: 2px solid #595959;
 }
 
 .footer__copyright {
-    color: #ddd;
+    color: #595959;
 }
