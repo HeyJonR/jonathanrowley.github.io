@@ -41,6 +41,15 @@
                   }
                 }
             
+                @keyframes expandDown {
+                  0% {
+                    height: 0;
+                  }
+                  100% {
+                    height: 75vh;
+                  }
+                }
+            
                 * {
                     box-sizing: border-box;
                 }
@@ -74,6 +83,7 @@
                     background: linear-gradient(to right, #9600EE, #DE1B89);
                     display: table;
                     width: 100%;
+                    animation: 1s ease-in 1s 1 expandDown;
                 }
     
                 .button {
