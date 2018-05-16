@@ -35,17 +35,10 @@
                 @keyframes fadeIn {
                   0% {
                     opacity: 0;
-                  }
-                  100% {
-                    opacity: 1;
-                  }
-                }
-            
-                @keyframes slideInAndDown {
-                  0% {
                     transform: translateY(-100%);
                   }
                   100% {
+                    opacity: 1;
                     transform: translateY(0);
                   }
                 }
@@ -73,7 +66,8 @@
                     -ms-text-size-adjust: 100%;
                     font-size: 1.2em;
                     line-height: 1.8;
-                    animation: 1s ease-in 0s 1 fadeIn;
+                    will-change: transform, opacity;
+                    animation: 1s ease 0s 1 fadeIn;
                 }
     
                 .hero {
@@ -83,8 +77,6 @@
                     background: linear-gradient(to right, #9600EE, #DE1B89);
                     display: table;
                     width: 100%;
-                    will-change: transform;
-                    animation: 1s ease 0s 1 slideInAndDown;
                 }
     
                 .button {
