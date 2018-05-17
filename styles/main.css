@@ -2,6 +2,8 @@
     max-width: 640px;
     margin: 0 auto;
     padding: 30px;
+    will-change: transform;
+    animation: 1s ease 0s 1 slideInAndDownSubtle;
 }
 
 .footer__rule {
