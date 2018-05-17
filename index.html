@@ -41,9 +41,18 @@
                   }
                 }
             
-                @keyframes slideInAndDown {
+                @keyframes slideInAndDownSubtle {
                     0% {
                         transform: translateY(-2%);
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+            
+                @keyframes slideInAndDown {
+                    0% {
+                        transform: translateY(-10%);
                     }
                     100% {
                         transform: translateY(0);
@@ -84,7 +93,7 @@
                     background: linear-gradient(to right, #9600EE, #DE1B89);
                     display: table;
                     width: 100%;
-                    animation: 1s ease 0s 1 slideInAndDown;
+                    animation: 1s ease 0s 1 slideInAndDownSubtle;
                 }
     
                 .button {
@@ -123,7 +132,7 @@
                     padding: 30px;
                     max-width: 640px;
                     margin: 0 auto;
-                    animation: 3s ease 0s 1 slideInAndDown;
+                    animation: 3s ease 0s 1 slideInAndDownSubtle;
                 }
     
                 .section--contact {
