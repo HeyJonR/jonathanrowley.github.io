@@ -35,12 +35,19 @@
                 @keyframes fadeIn {
                   0% {
                     opacity: 0;
-                    transform: translateY(-2%);
                   }
                   100% {
                     opacity: 1;
-                    transform: translateY(0);
                   }
+                }
+            
+                @keyframes slideInAndDown {
+                    0% {
+                        transform: translateX(-2%);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
                 }
             
                 * {
@@ -67,7 +74,7 @@
                     font-size: 1.2em;
                     line-height: 1.8;
                     will-change: transform, opacity;
-                    animation: 1.3s ease 0s 1 fadeIn;
+                    animation: 2s ease 0s 1 fadeIn, 1.3s ease 0s 1 slideInAndDown;
                 }
     
                 .hero {
