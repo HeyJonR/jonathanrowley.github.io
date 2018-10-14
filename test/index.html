@@ -15,7 +15,7 @@
       function test(e) {
         e.preventDefault();
         const request = new Request('https://google.com/', { mode: 'no-cors' });
-       fetch(request); 
+       fetch(request).then(response => {response; debugger;} ); 
       }
     </script>
   </body>
