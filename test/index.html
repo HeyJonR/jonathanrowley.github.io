@@ -4,10 +4,10 @@
   </head>
   <body>
     <a href="https://youtube.com" target="frame">test</a>
-    <iframe src="https://google.com" name="frame" />
+    <iframe src="https://google.com" name="frame"></iframe>
     <script>
     if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('test/serviceworker.js', {
+      navigator.serviceWorker.register('/test/serviceworker.js', {
         scope: '/'
       });
     }
