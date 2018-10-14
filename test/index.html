@@ -14,7 +14,7 @@
       
       function test(e) {
         e.preventDefault();
-        const request = new Request('https://google.com/', { mode: 'no-cors' });
+        const request = new Request('https://google.com/', { mode: 'no-cors', referer: 'https://www.google.com' });
        fetch(request).then(response => {response; debugger;} ); 
       }
     </script>
