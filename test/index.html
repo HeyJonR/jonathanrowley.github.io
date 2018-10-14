@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <a href="https://youtube.com" target="frame">test</a>
+    <iframe src="https://google.com" name="frame" />
+    <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/serviceworker.js', {
+        scope: '/'
+      });
+    }
+    </script>
+  </body>
+</html>
