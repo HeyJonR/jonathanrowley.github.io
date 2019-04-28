@@ -3,8 +3,20 @@
   <head>
   </head>
   <body>
+   <a href="https://youtube.com" onclick="test(event);" target="frame">test</a>
+    <iframe src="https://google.com" name="frame"></iframe>
     <script>
-    location.href="https://google.com";
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/test/serviceworker.js', {
+        scope: '/test/'
+      });
+    }
+      
+      function test(e) {
+        e.preventDefault();
+        const request = new Request('https://google.com/', { mode: 'no-cors', referer: 'https://www.google.com' });
+       fetch(request).then(response => {response; debugger;} ); 
+      }
     </script>
   </body>
 </html>
