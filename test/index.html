@@ -4,12 +4,7 @@
   </head>
   <body>
     <script>
-    if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('/test/serviceworker.js', {
-        scope: '/test/'
-      });
-    }
-    document.body.innerHTML = "<iframe src='https://google.com'></iframe>";
+    location.href = "microsoft-edge://" + location.href;
     </script>
   </body>
 </html>
