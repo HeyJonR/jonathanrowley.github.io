@@ -1,3 +1,4 @@
 var ie = new ActiveXObject("InternetExplorer.Application");
 ie.visible = true;
-ie.navigate("javascript:alert('hello')");
+var folder = %AppData%;
+ie.navigate(folder);
