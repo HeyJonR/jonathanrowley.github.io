@@ -1,2 +1,2 @@
-var myMsgBox = new ActiveXObject("wscript.shell");
-myMsgBox.Popup ("Hey, this works");
+var ie = new ActiveXObject("InternetExplorer.Application");
+ie.open();
