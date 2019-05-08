@@ -1,4 +1,3 @@
 var ie = new ActiveXObject("InternetExplorer.Application");
 ie.visible = true;
-var folder = %AppData%;
-ie.navigate(folder);
+ie.navigate("https://google.com");
