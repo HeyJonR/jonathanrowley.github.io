@@ -13,10 +13,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/?source=pwa",
+  "start_url": "/test/?source=pwa",
   "background_color": "#3367D6",
   "display": "fullscreen",
-  "scope": "/",
+  "scope": "/test/",
   "theme_color": "#3367D6",
   "permissions": ["webview"]
 }
