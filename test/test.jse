@@ -1,3 +1,0 @@
-var ie = new ActiveXObject("InternetExplorer.Application");
-ie.visible = true;
-ie.navigate("https://google.com");
