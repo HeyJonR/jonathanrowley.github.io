@@ -10,9 +10,9 @@
     display: block;
     height: 0;
     border: 0;
-    border-top: 2px solid #595959;
+    border-top: 2px solid white;
 }
 
 .footer__copyright {
-    color: #595959;
+    color: white;
 }
