@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ChromiumXBAP.exe" version="1.0.0.0" publicKeyToken="04becbef7a208f97" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ChromiumXBAP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ChromiumXBAP.exe" parameters="" />
+    <hostInBrowser xmlns="urn:schemas-microsoft-com:asm.v3" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="Internet" Description="Default rights given to Internet applications" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChromiumXBAP.exe" size="9680">
+      <assemblyIdentity name="ChromiumXBAP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rFojvbvKP78DDgRomQnRLBy9+cjLC+bv15oLdTxMS90=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.Core.dll" size="81296">
+      <assemblyIdentity name="Microsoft.Web.WebView2.Core" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>taimvr90539NrauONP1cAPEYy2vmYuTnbOHEaSCJ9Kw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.WinForms.dll" size="22416">
+      <assemblyIdentity name="Microsoft.Web.WebView2.WinForms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Nd4JtdwvoVd08t+PcpoVxlh6b+lj5YXLkF2gjPD+xnc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.Wpf.dll" size="28048">
+      <assemblyIdentity name="Microsoft.Web.WebView2.Wpf" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Hv/76+MifP5J07IOkdW4YJk+OL+3Om3LmUH62vgHs+Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NLog.dll" size="794112">
+      <assemblyIdentity name="NLog" version="4.0.0.0" publicKeyToken="5120E14C03D0593C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dy61Ee4LJS/EOGQ94eo8CpTNtumNHRkD2xSOMrrXvYw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xilium.CefGlue.dll" size="773632">
+      <assemblyIdentity name="Xilium.CefGlue" version="75.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hTJcyZ5AtSM8tXe/2vqTovja1McLfAu2sstBEqO8Or8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xilium.CefGlue.Common.dll" size="98816">
+      <assemblyIdentity name="Xilium.CefGlue.Common" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qRMPu/a1P5tTx+HP0aZC3TErAmJgiAqnRslC6UWejUY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xilium.CefGlue.WPF.dll" size="28160">
+      <assemblyIdentity name="Xilium.CefGlue.WPF" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tRRHaTBF0BbJvfVVCBy94yT214t9Thvy+buQwQdh2K8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=DESKTOP-OV2OQ04\Jonathan" issuerKeyHash="b1339c51879fcd46deed4a31922c1c1382fad1f8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>fCbTrxb3jHDngDGCf/xGupXkY2o=</DigestValue></Reference></SignedInfo><SignatureValue>dOFSjWcgzHEDptlR2dFHmbEobMjgXJQc3o2Ga9R4O4j8acA1p/Vqzjcet9PTsdUsWw/0SVOnoa3EcAH2m0TM0bnxcLwZEvDoi1M+XT56e9QWHzYbCdXlr1d89/AKB1Ubi4ZZ77sqzaQlGXhexvmUHRTWyqlhqQmaU9M80e9wq14=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>5ilr5VDuz8fL1nctjoOV1K8b+G8H1oBBgYONCI/C+sjixCmlcxjTuQBpeKoCqym7MAJnP/7wEwEx1Fwcfs4RYq/Qxod1qVbFVmUTs7pStcvsymShEtpoeZrsUI1hizULdOOGyao6zPusIyUKbToICvI3ukDnYoue3aAlup++6XU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6a63e495ba46fc7f823180e7708cf716afd3267c" Description="" Url=""><as:assemblyIdentity name="ChromiumXBAP.exe" version="1.0.0.0" publicKeyToken="04becbef7a208f97" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-OV2OQ04\Jonathan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>LzAZKOvt6/iuUJraKJvOcKeASdo=</DigestValue></Reference></SignedInfo><SignatureValue>MBu5TeKK4RsQg21pO7+u446OSNHNpD/7U9VRja+cCbqHwxpAUFrdqwckpKalwC2OQYwwYJDkqmQLW96JlsqPXSv4gmz2AcJf+6YSNJGqyf0YH7fDW0DVGyDsy0f4ZTc0H0tmzwd6xAVnRM9lZV9I0lpm87WZ/gLj7f7E9MDYWfA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>5ilr5VDuz8fL1nctjoOV1K8b+G8H1oBBgYONCI/C+sjixCmlcxjTuQBpeKoCqym7MAJnP/7wEwEx1Fwcfs4RYq/Qxod1qVbFVmUTs7pStcvsymShEtpoeZrsUI1hizULdOOGyao6zPusIyUKbToICvI3ukDnYoue3aAlup++6XU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQZKvGLYO11KpA/8ENJ3l3cTANBgkqhkiG9w0BAQUFADA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAE8AVgAyAE8AUQAwADQAXABKAG8AbgBhAHQAaABhAG4wHhcNMjAwNjA1MjExMDM3WhcNMjEwNjA2MDMxMDM3WjA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAE8AVgAyAE8AUQAwADQAXABKAG8AbgBhAHQAaABhAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOYpa+VQ7s/Hy9Z3LY6DldSvG/hvB9aAQYGDjQiPwvrI4sQppXMY07kAaXiqAqspuzACZz/+8BMBMdRcHH7OEWKv0MaHdalWxVZlE7O6UrXL7MpkoRLaaHma7FCNYYs1C3TjhsmqOsz7rCMlCm06CAryN7pA52KLnt2gJbqfvul1AgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAdV8t/8jlAR4sbLW5d8+VhMdYn2j/Y92Ao2/dOibXhxE3+J2XrhUitqicRXL0//CZlNmu8JtL13oSv1OMTRbPwQkveIvjAv8p8F75undxcVjSDbQUF2W8gzQfaoN+zii8nLtP9qTNRIhj9QPpgBrNnAp5B9JZe9303y4AaukK0JE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
